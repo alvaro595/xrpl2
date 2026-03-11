@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peminjaman Buku - Perpustakaan Kota Jakarta Timur</title>
+  <link rel="stylesheet" href="halaman.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nama-web">Perpustakaan Kota Malang</a>
+  <a href="halaman1.html">Beranda</a>
+  <a href="halaman2.html">Koleksi Buku</a>
+  <a href="halaman3.html">Peminjaman</a>
+</nav>
+
+<div class="header">
+  <h1>Peminjaman Buku</h1>
+  <p>Isi formulir di bawah ini untuk mengajukan peminjaman buku</p>
+</div>
+
+<div class="konten">
+
+  <div class="dua-kolom">
+
+    <div class="ab">
+      <h2>Formulir Peminjaman</h2>
+
+      <form action="#" method="POST">
+
+        <h3>Data Peminjam</h3>
+
+        <div class="form-group">
+          <label for="nama">Nama Lengkap *</label>
+          <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap Anda">
+        </div>
+
+        <div class="form-group">
+          <label for="no_anggota">Nomor Anggota *</label>
+          <input type="text" id="no_anggota" name="no_anggota" placeholder="Contoh: PKM-2024-001">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="email@contoh.com">
+        </div>
+
+        <div class="form-group">
+          <label for="telepon">Nomor HP</label>
+          <input type="tel" id="telepon" name="telepon" placeholder="08xxxxxxxxxx">
+        </div>
+
+        <hr style="border:none; border-top:1px solid #eee; margin:16px 0;">
+        <h3>Data Buku</h3>
+
+        <div class="form-group">
+          <label for="judul">Judul Buku *</label>
+          <input type="text" id="judul" name="judul" placeholder="Masukkan judul buku">
+        </div>
+
+        <div class="form-group">
+          <label for="kategori">Kategori</label>
+          <select id="kategori" name="kategori">
+            <option value="">-- Pilih Kategori --</option>
+            <option value="sastra">Sastra & Fiksi</option>
+            <option value="sains">Sains & Teknologi</option>
+            <option value="sejarah">Sejarah</option>
+            <option value="diri">Pengembangan Diri</option>
+            <option value="anak">Buku Anak</option>
+            <option value="referensi">Referensi</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="tgl_pinjam">Tanggal Pinjam *</label>
+          <input type="date" id="tgl_pinjam" name="tgl_pinjam">
+        </div>
+
+        <div class="form-group">
+          <label for="tgl_kembali">Tanggal Kembali *</label>
+          <input type="date" id="tgl_kembali" name="tgl_kembali">
+        </div>
+
+        <div class="form-group">
+          <label for="catatan">Catatan</label>
+          <textarea id="catatan" name="catatan" placeholder="Tulis catatan jika ada..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-hijau">Kirim Formulir</button>
+        <button type="reset" class="btn btn-abu">Reset</button>
+
+      </form>
+    </div>
+
+    <!-- Info Peminjaman -->
+    <div>
+
+      <div class="ab">
+        <h2>Ketentuan Peminjaman</h2>
+        <img src="https://images.unsplash.com/photo-1568667256549-094345857637?w=500&q=75"
+             alt="Petugas perpustakaan" style="width:100%; height:160px; object-fit:cover; margin-bottom:10px;">
+        <p class="foto-caption">Petugas siap membantu proses peminjaman</p>
+        <p>Beberapa hal yang perlu diketahui sebelum meminjam buku:</p>
+        <ol>
+          <li>Harus memiliki kartu anggota aktif</li>
+          <li>Maksimal pinjam 5 buku sekaligus</li>
+          <li>Masa pinjam 14 hari kalender</li>
+          <li>Bisa diperpanjang 1 kali via online</li>
+          <li>Denda Rp 500/buku/hari jika terlambat</li>
+          <li>Buku hilang wajib diganti</li>
+        </ol>
+      </div>
+
+      <div class="ab">
+        <h2>Denda Keterlambatan</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Keterlambatan</th>
+              <th>Denda / Buku</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1 – 7 hari</td>
+              <td>Rp 500/hari</td>
+            </tr>
+            <tr>
+              <td>8 – 14 hari</td>
+              <td>Rp 1.000/hari</td>
+            </tr>
+            <tr>
+              <td>Lebih dari 14 hari</td>
+              <td>Rp 2.000/hari</td>
+            </tr>
+            <tr>
+              <td>Buku hilang / rusak</td>
+              <td>Ganti buku baru</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="ab">
+        <h2>Cara Mengembalikan Buku</h2>
+        <ol>
+          <li>Datang ke meja layanan lantai 1</li>
+          <li>Serahkan buku + kartu anggota</li>
+          <li>Petugas memeriksa kondisi buku</li>
+          <li>Bayar denda jika ada keterlambatan</li>
+          <li>Terima bukti pengembalian</li>
+        </ol>
+        <br>
+        <div class="info-box">
+          <p>📦 Drop box tersedia 24 jam di pintu masuk untuk pengembalian di luar jam buka.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="ab" style="text-align:center; background:#eaf4ea;">
+    <p>Butuh bantuan? Hubungi kami di <strong>(0341) 321-456</strong> atau datang langsung ke perpustakaan.</p>
+    <a href="koleksi.html" class="btn btn-hijau">Lihat Koleksi Buku</a>
+   
+    <a href="index.html" class="btn btn-abu">Kembali ke Beranda</a>
+  </div>
+
+</div>
+
+<footer>
+  <p>Perpustakaan Umum  Jl. jembatan bandung, no 23 , jakarta timur</p>
+  <p>Telp: (0341) 321-456 
+    <a href="index.html">Beranda</a> 
+    <a href="koleksi.html">Koleksi</a> 
+    <a href="peminjaman.html">Peminjaman</a>
+  </p>
+  <p style="margin-top:8px; color:#8fba91;"> 2025 Perpustakaan</p>
+</footer>
+
+</body>
+</html>
